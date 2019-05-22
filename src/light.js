@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import * as THREE from 'three';
 
-class AmbientLight extends Component{
+export class AmbientLight extends Component{
   static defaultProps = {
     color:'rgb(30,30,30)'
     ,__constructor:'ambientlight'
@@ -13,7 +13,7 @@ class AmbientLight extends Component{
   }
 }
 
-class DirectionLight extends Component{
+export class DirectionLight extends Component{
   static defaultProps = {
     color:0xffffff
     ,__constructor:'directionligth'
@@ -27,4 +27,4 @@ class DirectionLight extends Component{
   }
 }
 
-module.exports = {AmbientLight, DirectionLight}
+// module.exports = {AmbientLight, DirectionLight}

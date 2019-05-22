@@ -17,8 +17,11 @@ module.exports = {
                 exclude: /(node_modules)/,
                 loader: 'babel-loader',
                 query: {
-                    presets: ['env', 'stage-0', 'react'],
-                    "plugins": ["transform-decorators-legacy"]
+                    'presets': ['@babel/preset-env', 'stage-0','@babel/preset-react'],
+                    "plugins": [
+                        ["@babel/plugin-proposal-decorators", { "legacy": true }],
+                        ["@babel/plugin-proposal-class-properties", { "loose" : true }]
+                    ]
                 }   
             },
             {
